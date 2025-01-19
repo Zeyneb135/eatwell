@@ -1,0 +1,52 @@
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    p{
+        font-size: 20px;
+        color: #ffffff;
+    }
+    .myul{
+        display: flex;
+        gap: 20px;
+        li{
+            list-style: none;
+            #Home{
+                color: #ffffff;
+            }
+            a{
+                text-decoration: none;
+                font-size: 13px;
+                color: #8d8f919b;
+                letter-spacing: 2px;
+                &:hover{
+                    color: #8d8f91;
+                }
+            }
+        }
+    }
+    .burger{
+        display: none;
+    }
+    .myull{
+        list-style: none;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .container{
+        .burger{
+            display: flex;
+            // display: block;
+            color: white;
+            align-items: center;
+        }
+        .myul{
+            display: none;
+        }
+    }
+}
